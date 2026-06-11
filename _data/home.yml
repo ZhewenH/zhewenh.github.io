@@ -1,0 +1,49 @@
+profile:
+  name: Zhewen Huang
+  photo: /assets/img/prof_pic.jpg
+  bio:
+    - I am Zhewen Huang. This homepage is set up as a compact academic profile; replace this paragraph with your current affiliation, advisors or collaborators, and research interests.
+    - Add a second short paragraph for previous education, internships, or the research questions you care about most.
+  links:
+    - label: GitHub
+      url: https://github.com/zhewenh
+    - label: CV
+      url: /cv/
+
+news:
+  - date: 2026.06
+    text: This homepage was reorganized into a compact one-page academic profile.
+  - date: YYYY.MM
+    text: Add recent publication, award, or service updates here.
+
+experience:
+  - organization: Your Organization
+    period: Month YYYY - Month YYYY
+    role: Research Intern / Student / Assistant
+    topic: Add a concise project or research topic.
+    mentor:
+      name: Mentor Name
+      url:
+
+publications:
+  - title: Add Your Selected Publication Title Here
+    venue: Conference or Journal YYYY
+    authors: Zhewen Huang, Coauthor One, Coauthor Two
+    image: /assets/img/publication_preview/wave-mechanics.gif
+    paper_url:
+    code_url:
+  - title: Add Another Selected Publication Title Here
+    venue: Conference or Journal YYYY
+    authors: Zhewen Huang, Coauthor One, Coauthor Two
+    image: /assets/img/publication_preview/brownian-motion.gif
+    paper_url:
+    code_url:
+
+teaching:
+  - role: Teaching Assistant
+    course_code: Course Code
+    course: Course Name
+    term: Term YYYY
+
+misc:
+  - Add a short personal note here, such as research communities, hobbies, reading, music, sports, or anything you want visitors to remember.
