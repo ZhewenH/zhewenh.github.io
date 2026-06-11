@@ -1,10 +1,13 @@
 profile:
   name: Zhewen Huang
   photo: /assets/img/2606.jpg
+  location: New York, NY, USA
   cv_pdf: /assets/pdf/Curriculum_Vitae.pdf
   bio:
-    - I am Zhewen Huang. This homepage is set up as a compact academic profile; replace this paragraph with your current affiliation, advisors or collaborators, and research interests.
-    - Add a second short paragraph for previous education, internships, or the research questions you care about most.
+    - Hi everyone, thanks for stopping by! I am a third-year CS PhD student at CUNY Graduate Center, where I am fortunate to be advised by [Dr. Chia-Ling Tsai](https://www.cs.qc.cuny.edu/faculty/tsai/index.html). I previously obtained my Master's degree at Miami University under the guidance of [Dr. John Femiani](https://jfemiani.github.io).
+    - "My research focused on image and video processing, generative modeling, multimodal large language models, autonomous agents, and AI for healthcare. I aim to build reliable vision-language systems that can understand, generate, and reason across complex multimodal data. I love to use what I learned to make people's life **better** and **easier**."
+    - "**Research Interests**"
+    - "<ul><li>Image and video processing and generation</li><li>Multimodal large language models and agents</li><li>AI for healthcare and medical imaging</li></ul>"
   links:
     - label: CV
       url: /cv/
@@ -32,14 +35,14 @@ publications:
     title: "ECT-3DMedSAM: Efficient Cross Teaching Using Segment Anything Model for Semi-Supervised 3D Medical Image Segmentation"
     venue: MIDL 2026
     authors: "**Zhewen Huang**, Sara R. Guariglia, Jiaqi Yang, Chia-Ling Tsai"
-    image: /assets/img/publication_preview/wave-mechanics.gif
+    image: /assets/img/publication_preview/ect-3dmedsam.png
     paper_url: https://openreview.net/pdf?id=oT5M3uMSD2
     code_url:
   - id: engage-ytb
     title: Engagement Prediction in YouTube Educational Videos
     venue: Miami University
     authors: "**Zhewen Huang**"
-    image: /assets/img/publication_preview/brownian-motion.gif
+    image: /assets/img/publication_preview/engage-ytb.png
     paper_url: https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=miami1681841225399955&disposition=inline
     code_url:
 

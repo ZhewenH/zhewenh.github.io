@@ -3,7 +3,6 @@ layout: null
 title: Zhewen Huang
 permalink: /
 ---
-
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' }}">
   <head>
@@ -126,7 +125,12 @@ permalink: /
             </div>
             <div class="publication-list">
               {% for item in site.data.home.publications %}
-                <article class="publication-row" {% if item.id %}id="{{ item.id }}"{% endif %}>
+                <article
+                  class="publication-row"
+                  {% if item.id %}
+                    id="{{ item.id }}"
+                  {% endif %}
+                >
                   {% if item.image %}
                     {% assign publication_href = item.paper_url | default: item.code_url | default: '#' %}
                     <a class="publication-row__image" href="{{ publication_href }}" aria-label="{{ item.title }}">
@@ -199,13 +203,15 @@ permalink: /
     </main>
 
     <footer class="academic-footer">
-      <span>&copy; {{ site.time | date: '%Y' }} {{ site.data.home.profile.name }}</span>
+      <span
+        >&copy; {{ site.time | date: '%Y' }}
+        {{ site.data.home.profile.name -}}
+      </span>
       <span>Last updated {{ site.time | date: '%Y-%m-%d' }}</span>
     </footer>
 
     {% if site.al_folio.compat.bootstrap.enabled %}
       <script src="{{ '/assets/js/bootstrap-compat.js' | relative_url }}"></script>
     {% endif %}
-
   </body>
 </html>
