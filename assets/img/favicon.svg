@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Blue graduation cap">
+  <rect width="64" height="64" rx="14" fill="#edf3f9" />
+  <path d="M8 25.5 32 13l24 12.5L32 38 8 25.5Z" fill="#204f84" />
+  <path d="M19 32.5v10.2c0 3.4 5.8 7.3 13 7.3s13-3.9 13-7.3V32.5L32 39.2 19 32.5Z" fill="#2f6fa7" />
+  <path d="M32 13 56 25.5v16.8" fill="none" stroke="#173e67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="56" cy="45.5" r="3.6" fill="#f2b84b" />
+  <path d="M52.8 49.4 50.9 57h10.2l-1.9-7.6" fill="#f2b84b" />
+  <path d="M8 25.5 32 13l24 12.5L32 38 8 25.5Z" fill="none" stroke="#173e67" stroke-width="2" stroke-linejoin="round" />
+</svg>
