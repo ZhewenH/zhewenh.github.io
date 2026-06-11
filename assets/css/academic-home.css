@@ -44,6 +44,11 @@ a:hover {
   text-decoration: underline;
 }
 
+strong,
+b {
+  font-weight: 700;
+}
+
 .home-skip {
   position: absolute;
   top: 0.75rem;
