@@ -32,14 +32,14 @@ news:
 
 publications:
   - id: ect-3dmedsam
-    title: "ECT-3DMedSAM: Efficient Cross Teaching Using Segment Anything Model for Semi-Supervised 3D Medical Image Segmentation"
+    title: "**ECT-3DMedSAM: Efficient Cross Teaching Using Segment Anything Model for Semi-Supervised 3D Medical Image Segmentation**"
     venue: MIDL 2026
     authors: "**Zhewen Huang**, Sara R. Guariglia, Jiaqi Yang, Chia-Ling Tsai"
     image: /assets/img/publication_preview/ect-3dmedsam.png
     paper_url: https://openreview.net/pdf?id=oT5M3uMSD2
     code_url:
   - id: engage-ytb
-    title: Engagement Prediction in YouTube Educational Videos
+    title: "**Engagement Prediction in YouTube Educational Videos**"
     venue: Miami University
     authors: "**Zhewen Huang**"
     image: /assets/img/publication_preview/engage-ytb.png

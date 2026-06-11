@@ -61,8 +61,14 @@ permalink: /
               </div>
               {% endif %}
             </div>
-            {% if site.data.home.profile.photo %}
-            <img class="bio-photo" src="{{ site.data.home.profile.photo | relative_url }}" alt="{{ site.data.home.profile.name }}" />
+            {% if site.data.home.profile.photo or site.data.home.profile.location %}
+            <div class="bio-aside">
+              {% if site.data.home.profile.photo %}
+              <img class="bio-photo" src="{{ site.data.home.profile.photo | relative_url }}" alt="{{ site.data.home.profile.name }}" />
+              {% endif %} {% if site.data.home.profile.location %}
+              <p class="profile-location">{{ site.data.home.profile.location }}</p>
+              {% endif %}
+            </div>
             {% endif %}
           </div>
         </section>

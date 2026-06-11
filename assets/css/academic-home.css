@@ -144,6 +144,11 @@ b {
   align-items: start;
 }
 
+.bio-aside {
+  width: 100%;
+  max-width: 230px;
+}
+
 .bio-paragraphs {
   display: grid;
   gap: 0.75rem;
@@ -203,12 +208,20 @@ b {
 
 .bio-photo {
   width: 100%;
-  max-width: 230px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--home-border);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(18, 35, 58, 0.1);
+}
+
+.profile-location {
+  margin: 0.72rem 0 0;
+  color: var(--home-muted);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
 }
 
 .news-list {
@@ -364,7 +377,7 @@ b {
     grid-template-columns: 1fr;
   }
 
-  .bio-photo {
+  .bio-aside {
     max-width: 190px;
   }
 
