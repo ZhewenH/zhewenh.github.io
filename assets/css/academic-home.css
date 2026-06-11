@@ -197,17 +197,15 @@ a:hover {
   display: grid;
   gap: 0.45rem;
   margin: 0;
-  padding-left: 1.45rem;
-}
-
-.news-list li::marker {
-  color: var(--home-muted);
+  padding-left: 0;
+  list-style: none;
 }
 
 .news-list time {
   display: inline-block;
   min-width: 4.8rem;
   color: var(--home-muted);
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
 
@@ -290,14 +288,20 @@ a:hover {
 
 .teaching-row {
   display: grid;
-  grid-template-columns: 150px 110px minmax(0, 1fr) auto;
+  grid-template-columns: 150px 130px 110px minmax(0, 1fr) auto;
   gap: 0.6rem 1rem;
   align-items: baseline;
 }
 
 .teaching-row__role,
+.teaching-row__school,
 .teaching-row__code {
   color: var(--home-muted);
+}
+
+.teaching-row__school {
+  color: var(--home-link-strong);
+  font-weight: 600;
 }
 
 .academic-footer {
