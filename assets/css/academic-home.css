@@ -212,7 +212,7 @@ a:hover {
   font-variant-numeric: tabular-nums;
 }
 
-.experience-list,
+
 .publication-list,
 .teaching-list,
 .misc-copy {
@@ -220,24 +220,13 @@ a:hover {
   gap: 1rem;
 }
 
-.experience-row,
+
 .publication-row,
 .teaching-row {
   margin: 0;
 }
 
-.experience-row p {
-  margin: 0.2rem 0 0;
-}
 
-.experience-row__header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.35rem 1rem;
-}
-
-.experience-row__header h3,
 .publication-row h3 {
   margin: 0;
   font-family: "Source Serif 4", Georgia, serif;
@@ -246,7 +235,7 @@ a:hover {
   letter-spacing: -0.01em;
 }
 
-.experience-row__header time,
+
 .publication-row__venue,
 .teaching-row time {
   color: var(--home-muted);
@@ -258,6 +247,14 @@ a:hover {
   grid-template-columns: 160px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
+  scroll-margin-top: 5.5rem;
+}
+
+.publication-row:target {
+  padding: 0.85rem;
+  margin: -0.85rem;
+  border-radius: 9px;
+  background: var(--home-link-soft);
 }
 
 .publication-row__image {
