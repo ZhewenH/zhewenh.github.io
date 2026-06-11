@@ -6,7 +6,7 @@ profile:
   bio:
     - Hi everyone, thanks for stopping by! I am a third-year CS PhD student at CUNY Graduate Center, where I am fortunate to be advised by [Dr. Chia-Ling Tsai](https://www.cs.qc.cuny.edu/faculty/tsai/index.html). I previously obtained my Master's degree at Miami University under the guidance of [Dr. John Femiani](https://jfemiani.github.io).
     - "My research focused on image and video processing, generative modeling, multimodal large language models, autonomous agents, and AI for healthcare. I aim to build reliable vision-language systems that can understand, generate, and reason across complex multimodal data. I love to use what I learned to make people's life **better** and **easier**."
-    - "**Research Interests**"
+    - "**My research interests include but not limited to:**"
     - "<ul><li>Image and video processing and generation</li><li>Multimodal large language models and agents</li><li>AI for healthcare and medical imaging</li></ul>"
   links:
     - label: CV
@@ -22,13 +22,13 @@ profile:
 
 news:
   - date: 2026.02
-    text: "One paper [ECT-3DMedSAM](#ect-3dmedsam) is accepted to MIDL 2026!"
+    text: "[ECT-3DMedSAM](#ect-3dmedsam) is accepted to MIDL 2026!"
   - date: 2024.08
     text: I've started PhD journey at CUNY Graduate Center!
   - date: 2023.05
     text: I successfully earned my Master's degree at Miami University!
   - date: 2023.04
-    text: "One paper [Engagement Prediction in YouTube Educational Videos](#engage-ytb) is published!"
+    text: "[Engagement Prediction in YouTube Educational Videos](#engage-ytb) is published!"
 
 publications:
   - id: ect-3dmedsam
@@ -62,6 +62,3 @@ teaching:
     course_code: CSCI 211
     course: Object-Oriented Program in C++
     term: 2026 Spring - 2026 Fall
-
-misc:
-  - Add a short personal note here, such as research communities, hobbies, reading, music, sports, or anything you want visitors to remember.
