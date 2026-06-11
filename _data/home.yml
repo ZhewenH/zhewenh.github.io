@@ -35,24 +35,27 @@ publications:
     image: /assets/img/publication_preview/wave-mechanics.gif
     paper_url: https://openreview.net/pdf?id=oT5M3uMSD2
     code_url:
-  - id: ect-3dmedsam
+  - id: engage-ytb
     title: Engagement Prediction in YouTube Educational Videos
     venue: Miami University
     authors: "**Zhewen Huang**"
     image: /assets/img/publication_preview/brownian-motion.gif
     paper_url: https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=miami1681841225399955&disposition=inline
-    code_url: 
+    code_url:
 
 teaching:
   - role: Teaching Assistant
+    school: Miami University
     course_code: CSE 278
     course: System I (C++, Linux)
     term: 2021 Fall - 2023 Fall
   - role: Teaching Assistant
+    school: Queens College
     course_code: CSCI 212
     course: Object-Oriented Program in Java
     term: 2025 Fall - 2026 Fall
   - role: Teaching Assistant
+    school: Queens College
     course_code: CSCI 211
     course: Object-Oriented Program in C++
     term: 2026 Spring - 2026 Fall

@@ -12,6 +12,10 @@ permalink: /
     <title>{{ site.data.home.profile.name | default: site.title }}</title>
     <meta name="description" content="{{ site.description | strip_html | strip_newlines | strip }}">
     <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
+    {% if site.al_folio.compat.bootstrap.enabled %}
+      <link rel="stylesheet" href="{{ '/assets/css/bootstrap-compat.css' | relative_url }}">
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
@@ -163,6 +167,9 @@ permalink: /
                   {% if item.role %}
                     <span class="teaching-row__role">{{ item.role }}</span>
                   {% endif %}
+                  {% if item.school %}
+                    <span class="teaching-row__school">{{ item.school }}</span>
+                  {% endif %}
                   {% if item.course_code %}
                     <span class="teaching-row__code">{{ item.course_code }}</span>
                   {% endif %}
@@ -195,6 +202,10 @@ permalink: /
       <span>&copy; {{ site.time | date: '%Y' }} {{ site.data.home.profile.name }}</span>
       <span>Last updated {{ site.time | date: '%Y-%m-%d' }}</span>
     </footer>
+
+    {% if site.al_folio.compat.bootstrap.enabled %}
+      <script src="{{ '/assets/js/bootstrap-compat.js' | relative_url }}"></script>
+    {% endif %}
 
   </body>
 </html>
