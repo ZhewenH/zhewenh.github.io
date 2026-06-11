@@ -114,7 +114,7 @@
             </div>
             <div class="publication-list">
               {% for item in site.data.home.publications %}
-                <article class="publication-row">
+                <article class="publication-row" {% if item.id %}id="{{ item.id }}"{% endif %}>
                   {% if item.image %}
                     {% assign publication_href = item.paper_url | default: item.code_url | default: '#' %}
                     <a class="publication-row__image" href="{{ publication_href }}" aria-label="{{ item.title }}">

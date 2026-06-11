@@ -258,6 +258,14 @@ a:hover {
   grid-template-columns: 160px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
+  scroll-margin-top: 5.5rem;
+}
+
+.publication-row:target {
+  padding: 0.85rem;
+  margin: -0.85rem;
+  border-radius: 9px;
+  background: var(--home-link-soft);
 }
 
 .publication-row__image {
