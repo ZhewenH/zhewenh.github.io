@@ -149,6 +149,19 @@ a:hover {
   margin: 0;
 }
 
+.academic-lede p,
+.academic-text p,
+.news-copy p,
+.publication-row__authors p {
+  margin: 0;
+}
+
+.academic-lede ul,
+.academic-text ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.25rem;
+}
+
 .profile-inline {
   display: flex;
   flex-wrap: wrap;
@@ -207,6 +220,10 @@ a:hover {
   color: var(--home-muted);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+}
+
+.news-copy {
+  display: inline-block;
 }
 
 .experience-list,
