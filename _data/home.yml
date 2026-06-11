@@ -20,23 +20,28 @@ profile:
 news:
   - date: 2026.02
     text: "One paper [ECT-3DMedSAM](#ect-3dmedsam) is accepted to MIDL 2026!"
-  - date: YYYY.MM
-    text: Add recent publication, award, or service updates here.
+  - date: 2024.08
+    text: I've started PhD journey at CUNY Graduate Center!
+  - date: 2023.05
+    text: I successfully earned my Master's degree in Miami University!
+  - date: 2023.04
+    text: "One paper [Engagement Prediction in YouTube Educational Videos](#engage-ytb) is published!"
 
 publications:
   - id: ect-3dmedsam
     title: "ECT-3DMedSAM: Efficient Cross Teaching Using Segment Anything Model for Semi-Supervised 3D Medical Image Segmentation"
     venue: MIDL 2026
-    authors: Zhewen Huang, Sara R. Guariglia, Jiaqi Yang, Chia-Ling Tsai
+    authors: "**Zhewen Huang**, Sara R. Guariglia, Jiaqi Yang, Chia-Ling Tsai"
     image: /assets/img/publication_preview/wave-mechanics.gif
     paper_url: https://openreview.net/pdf?id=oT5M3uMSD2
     code_url:
-  - title: Add Another Selected Publication Title Here
-    venue: Conference or Journal YYYY
-    authors: Zhewen Huang, Coauthor One, Coauthor Two
+  - id: ect-3dmedsam
+    title: Engagement Prediction in YouTube Educational Videos
+    venue: Miami University
+    authors: "**Zhewen Huang**"
     image: /assets/img/publication_preview/brownian-motion.gif
-    paper_url:
-    code_url:
+    paper_url: https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=miami1681841225399955&disposition=inline
+    code_url: 
 
 teaching:
   - role: Teaching Assistant

@@ -28,8 +28,7 @@ body {
   margin: 0;
   background:
     radial-gradient(1400px 520px at 8% -8%, rgba(32, 79, 132, 0.1), transparent 60%),
-    radial-gradient(1200px 480px at 100% 0%, rgba(23, 62, 103, 0.08), transparent 58%),
-    var(--home-bg);
+    radial-gradient(1200px 480px at 100% 0%, rgba(23, 62, 103, 0.08), transparent 58%), var(--home-bg);
   color: var(--home-text);
   font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
   font-size: 16px;
