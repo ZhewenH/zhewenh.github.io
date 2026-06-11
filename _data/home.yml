@@ -5,10 +5,16 @@ profile:
     - I am Zhewen Huang. This homepage is set up as a compact academic profile; replace this paragraph with your current affiliation, advisors or collaborators, and research interests.
     - Add a second short paragraph for previous education, internships, or the research questions you care about most.
   links:
-    - label: GitHub
-      url: https://github.com/zhewenh
     - label: CV
       url: /cv/
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=JeALZicAAAAJ
+    - label: GitHub
+      url: https://github.com/zhewenh
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/zhewen-huang-7734ab236/
+    - label: Email
+      url: ZHEWEN.HUANG59@gc.cuny.edu
 
 news:
   - date: 2026.06
