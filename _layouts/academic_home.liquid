@@ -6,7 +6,7 @@
     <title>{{ site.data.home.profile.name | default: site.title }}</title>
     <meta name="description" content="{{ site.description | strip_html | strip_newlines | strip }}">
     <link rel="canonical" href="{{ '/' | absolute_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
     <a class="home-skip" href="#main">Skip to content</a>
@@ -38,10 +38,13 @@
                 <div class="profile-inline" aria-label="Profile links">
                   {% for link in site.data.home.profile.links %}
                     {% if link.url %}
-                      {% if link.url contains '://' or link.url contains 'mailto:' %}
-                        <a href="{{ link.url }}">{{ link.label }}</a>
+                      {% assign link_url = link.url | strip %}
+                      {% if link_url contains '://' or link_url contains 'mailto:' %}
+                        <a href="{{ link_url }}">{{ link.label }}</a>
+                      {% elsif link_url contains '@' %}
+                        <a href="mailto:{{ link_url }}">{{ link.label }}</a>
                       {% else %}
-                        <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
+                        <a href="{{ link_url | relative_url }}">{{ link.label }}</a>
                       {% endif %}
                     {% endif %}
                   {% endfor %}
