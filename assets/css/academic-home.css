@@ -216,12 +216,28 @@ b {
 }
 
 .profile-location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.38rem;
+  width: 100%;
   margin: 0.72rem 0 0;
   color: var(--home-muted);
   font-size: 0.98rem;
   font-weight: 600;
   line-height: 1.35;
   text-align: center;
+}
+
+.profile-location__icon {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .news-list {
@@ -270,12 +286,16 @@ b {
 }
 
 .experience-row__header h3,
-.publication-row h3 {
+.publication-row__title {
   margin: 0;
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.05rem;
   line-height: 1.35;
   letter-spacing: -0.01em;
+}
+
+.publication-row__title p {
+  margin: 0;
 }
 
 .experience-row__header time,

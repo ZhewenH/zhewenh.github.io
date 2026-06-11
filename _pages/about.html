@@ -66,7 +66,13 @@ permalink: /
               {% if site.data.home.profile.photo %}
               <img class="bio-photo" src="{{ site.data.home.profile.photo | relative_url }}" alt="{{ site.data.home.profile.name }}" />
               {% endif %} {% if site.data.home.profile.location %}
-              <p class="profile-location">{{ site.data.home.profile.location }}</p>
+              <p class="profile-location">
+                <svg class="profile-location__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s7-5.2 7-12a7 7 0 0 0-14 0c0 6.8 7 12 7 12z" />
+                  <circle cx="12" cy="9" r="2.4" />
+                </svg>
+                <span>{{ site.data.home.profile.location }}</span>
+              </p>
               {% endif %}
             </div>
             {% endif %}
@@ -120,18 +126,18 @@ permalink: /
             <h2 id="publications-heading">Selected Publications</h2>
           </div>
           <div class="publication-list">
-            {% for item in site.data.home.publications %}
+            {% for item in site.data.home.publications %} {% assign publication_title_text = item.title | markdownify | strip_html | strip %}
             <article class="publication-row" {% if item.id %} id="{{ item.id }}" {% endif %}>
               {% if item.image %} {% assign publication_href = item.paper_url | default: item.code_url | default: '#' %}
-              <a class="publication-row__image" href="{{ publication_href }}" aria-label="{{ item.title }}">
-                <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" />
+              <a class="publication-row__image" href="{{ publication_href }}" aria-label="{{ publication_title_text }}">
+                <img src="{{ item.image | relative_url }}" alt="{{ publication_title_text }}" />
               </a>
               {% endif %}
               <div class="publication-row__content">
                 {% if item.venue %}
                 <p class="publication-row__venue">{{ item.venue }}</p>
                 {% endif %}
-                <h3>{{ item.title }}</h3>
+                <div class="publication-row__title" role="heading" aria-level="3">{{ item.title | markdownify }}</div>
                 {% if item.authors %}
                 <div class="publication-row__authors">{{ item.authors | markdownify }}</div>
                 {% endif %}
