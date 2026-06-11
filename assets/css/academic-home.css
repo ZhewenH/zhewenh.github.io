@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap");
+
 :root {
   color-scheme: light;
-  --home-bg: #fbfbf8;
-  --home-text: #222222;
-  --home-muted: #626262;
-  --home-border: #ddddda;
-  --home-link: #25605a;
-  --home-link-soft: #e6f1ee;
-  --home-nav: rgba(251, 251, 248, 0.94);
+  --home-bg: #f3f5f8;
+  --home-surface: #ffffff;
+  --home-surface-soft: #f8fafd;
+  --home-text: #172230;
+  --home-muted: #586476;
+  --home-border: #d9e0e8;
+  --home-link: #204f84;
+  --home-link-strong: #173e67;
+  --home-link-soft: #edf3f9;
+  --home-button-bg: #f8fbff;
+  --home-nav: rgba(248, 250, 253, 0.94);
+  --home-shadow: 0 10px 28px rgba(16, 32, 52, 0.06);
 }
 
 * {
@@ -19,11 +26,14 @@ html {
 
 body {
   margin: 0;
-  background: var(--home-bg);
+  background:
+    radial-gradient(1400px 520px at 8% -8%, rgba(32, 79, 132, 0.1), transparent 60%),
+    radial-gradient(1200px 480px at 100% 0%, rgba(23, 62, 103, 0.08), transparent 58%),
+    var(--home-bg);
   color: var(--home-text);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.62;
 }
 
 a {
@@ -62,6 +72,7 @@ a:hover {
   border-bottom: 1px solid var(--home-border);
   background: var(--home-nav);
   backdrop-filter: blur(16px);
+  box-shadow: 0 4px 16px rgba(17, 30, 47, 0.04);
 }
 
 .academic-nav__brand {
@@ -88,20 +99,28 @@ a:hover {
 }
 
 .academic-section {
-  padding: 1.6rem 0;
-  border-bottom: 1px solid var(--home-border);
+  padding: 1.28rem;
+  margin-top: 1.18rem;
+  border: 1px solid var(--home-border);
+  border-radius: 13px;
+  background: var(--home-surface);
+  box-shadow: 0 5px 16px rgba(17, 30, 47, 0.04);
   scroll-margin-top: 5.5rem;
 }
 
 .academic-section--intro {
-  padding-top: 0.5rem;
+  margin-top: 0;
+  padding: 1.42rem;
+  border-radius: 16px;
+  box-shadow: var(--home-shadow);
 }
 
 .academic-section__header h2,
 .academic-title {
   margin: 0;
   line-height: 1.2;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
+  font-family: "Source Serif 4", Georgia, serif;
 }
 
 .academic-section__header h2 {
@@ -144,11 +163,25 @@ a:hover {
   align-items: center;
   min-height: 2rem;
   padding: 0.25rem 0.62rem;
-  border: 1px solid var(--home-border);
-  border-radius: 4px;
-  background: var(--home-link-soft);
+  border: 1px solid #7e9fbe;
+  border-radius: 9px;
+  background: var(--home-button-bg);
   font-weight: 600;
   line-height: 1.2;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.profile-inline a:hover,
+.profile-inline a:focus,
+.publication-row__links a:hover,
+.publication-row__links a:focus {
+  border-color: var(--home-link);
+  background: var(--home-link);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .bio-photo {
@@ -157,6 +190,8 @@ a:hover {
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--home-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(18, 35, 58, 0.1);
 }
 
 .news-list {
@@ -205,8 +240,10 @@ a:hover {
 .experience-row__header h3,
 .publication-row h3 {
   margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.05rem;
   line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .experience-row__header time,
@@ -229,7 +266,8 @@ a:hover {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border: 1px solid var(--home-border);
-  background: #ffffff;
+  border-radius: 9px;
+  background: var(--home-surface-soft);
 }
 
 .publication-row__image img {
