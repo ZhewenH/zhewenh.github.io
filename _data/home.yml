@@ -4,8 +4,8 @@ profile:
   location: New York, NY, USA
   cv_pdf: /assets/pdf/Curriculum_Vitae.pdf
   bio:
-    - Hi everyone 👋, thanks for stopping by! I am a third-year CS PhD student at CUNY Graduate Center, where I am fortunate to be advised by [Dr. Chia-Ling Tsai](https://www.cs.qc.cuny.edu/faculty/tsai/index.html). I previously obtained my Master's degree at Miami University under the guidance of [Dr. John Femiani](https://jfemiani.github.io).
-    - "My research focused on image and video processing, generative modeling, multimodal large language models, autonomous agents, and AI for healthcare. I aim to build reliable vision-language systems that can understand, generate, and reason across complex multimodal data. I love to use what I learned to make people's life **better** and **easier**. 💗"
+    - Hi everyone 👋, thanks for stopping by! I am a third-year CS PhD student at [CUNY Graduate Center](https://www.gc.cuny.edu), where I am fortunate to be advised by [Dr. Chia-Ling Tsai](https://www.cs.qc.cuny.edu/faculty/tsai/index.html). I previously obtained my Master's degree at [Miami University](https://miamioh.edu) under the guidance of [Dr. John Femiani](https://jfemiani.github.io).
+    - "My research focused on image and video processing, generative modeling, multimodal large language models, autonomous agents, and AI for healthcare. I aim to build reliable vision-language systems that can understand, generate, and reason across complex multimodal data. II love using what I've learned to make people's lives **better** and **easier**. 💗"
     - "**My research interests include but not limited to:**"
     - "<ul><li>Image and video processing and generation</li><li>Multimodal large language models and agents</li><li>AI for healthcare and medical imaging</li></ul>"
   links:
