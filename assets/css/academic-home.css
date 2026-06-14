@@ -385,14 +385,13 @@ b {
 }
 
 .publication-row__image {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   padding: 0.35rem;
-  border: 1px solid var(--home-border);
-  border-radius: 9px;
-  background: var(--home-surface-soft);
 }
 
 .publication-row__image img {
@@ -433,9 +432,13 @@ b {
 
 .teaching-row {
   display: grid;
-  grid-template-columns: 150px 130px 110px minmax(0, 1fr) auto;
+  grid-template-columns: max-content max-content max-content minmax(0, 1fr) max-content;
   gap: 0.6rem 1rem;
   align-items: baseline;
+}
+
+.teaching-row time {
+  white-space: nowrap;
 }
 
 .teaching-row__role,
